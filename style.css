@@ -1,0 +1,181 @@
+/* الألوان الأساسية: */
+/* جوزي غامق: #3E2723 */
+/* جوزي أغمق قليلاً: #2C1A17 */
+/* بيج: #F5DEB3 */
+/* بيج فاتح: #FFF8DC */
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF8DC; /* بيج فاتح للخلفية العامة */
+    color: #2C1A17; /* لون نص أساسي جوزي أغمق */
+    direction: rtl; /* لجعل الاتجاه من اليمين لليسار */
+    text-align: right; /* لمحاذاة النص لليمين */
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #3E2723; /* جوزي غامق للهيدر */
+    color: #F5DEB3; /* بيج فاتح للنص في الهيدر */
+    padding: 1.5em 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 1px; /* مسافة بين الأحرف */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #F5DEB3; /* بيج فاتح للروابط */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFF8DC; /* بيج أفتح عند المرور */
+}
+
+/* الأقسام الرئيسية في الصفحة */
+section {
+    padding: 60px 0;
+    margin-bottom: 20px;
+    background-color: #F5DEB3; /* بيج للخلفية الأساسية للأقسام */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+section h2 {
+    color: #3E2723; /* جوزي غامق للعناوين الفرعية */
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+    position: relative;
+}
+
+/* خط تحت العناوين */
+section h2::after {
+    content: '';
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: -10px;
+    width: 60px;
+    height: 3px;
+    background-color: #3E2723;
+    border-radius: 2px;
+}
+
+/* قسم البطل (Hero Section) */
+.hero {
+    background-color: #2C1A17; /* جوزي أغمق للخلفية البطل */
+    color: #FFF8DC; /* بيج فاتح للنص */
+    text-align: center;
+    padding: 100px 0;
+    border-radius: 0; /* إزالة الحواف المستديرة هنا */
+    box-shadow: none;
+    margin-bottom: 0;
+}
+
+.hero h2 {
+    color: #F5DEB3;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #F5DEB3; /* بيج للزر */
+    color: #3E2723; /* جوزي غامق لنص الزر */
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FFF8DC; /* بيج أفتح عند المرور */
+    color: #2C1A17; /* جوزي أغمق */
+}
+
+/* شبكة المنتجات */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.product-item {
+    background-color: #FFF8DC; /* بيج فاتح جداً لخلفية المنتج */
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+    border: 1px solid #E0D4C5; /* حدود خفيفة */
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+}
+
+.product-item h3 {
+    color: #3E2723;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.product-item p {
+    color: #5A4843; /* لون نص أغمق قليلاً */
+}
+
+/* قسم التواصل */
+.contact-us p a {
+    color: #3E2723;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-us p a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #3E2723; /* جوزي غامق للفوتر */
+    color: #F5DEB3; /* بيج للنص */
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+}

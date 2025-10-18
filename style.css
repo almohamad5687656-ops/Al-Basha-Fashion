@@ -179,3 +179,59 @@ footer {
     padding: 30px 0;
     margin-top: 50px;
 }
+/* تنسيق الأزرار الجديدة لمنصات التواصل الاجتماعي */
+.social-buttons {
+    margin-top: 20px;
+    display: flex; /* لعرض الأزرار بجانب بعضها البعض */
+    gap: 15px; /* المسافة بين الأزرار */
+    justify-content: center; /* توسيط الأزرار (إذا كان عرض القسم كافياً) */
+    flex-wrap: wrap; /* للسماح للأزرار بالنزول لسطر جديد على الشاشات الصغيرة */
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white; /* لون النص داخل الزر */
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+/* تنسيق زر الفيسبوك */
+.facebook-btn {
+    background-color: #3b5998; /* لون الفيسبوك الأزرق */
+    border: 1px solid #3b5998;
+}
+
+.facebook-btn:hover {
+    background-color: #2d4373;
+}
+
+/* تنسيق زر الإنستغرام (لون متدرج تقريبي) */
+.instagram-btn {
+    background-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    border: 1px solid #c13584;
+}
+
+.instagram-btn:hover {
+    opacity: 0.9;
+}
+
+/* تنسيق زر الواتساب */
+.whatsapp-btn {
+    background-color: #25d366; /* لون الواتساب الأخضر */
+    border: 1px solid #25d366;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128c7e;
+}
+
+/* تعديل لتوسيط المحتوى في قسم التواصل (إذا لم يكن موسّطًا بالفعل) */
+.contact-us .container {
+    text-align: center;
+}
+
+

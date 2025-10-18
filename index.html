@@ -6,15 +6,39 @@
     <title>أزياء الباشا S.H.K</title>
     <link rel="stylesheet" href="style.css">
 
-    <meta property="og:image" content="https://almohamad5687656-ops.github.io/Al-Basha-Fashion/logoooo.jpg" />
+    <meta property="og:image" content="https://almohamad5687656-ops.github.io/Al-Basha-Fashion/lozo.jpg" />
     
-    <link rel="icon" type="image/jpeg" href="https://almohamad5687656-ops.github.io/Al-Basha-Fashion/logoooo.jpg">
+    <link rel="icon" type="image/jpeg" href="https://almohamad5687656-ops.github.io/Al-Basha-Fashion/lozo.jpg">
     
+    <style>
+        /* CSS بسيط لتوسيط الشعار الرئيسي وتحديد حجمه وإضافة تأثير الـ 3D (الظل) */
+        .header-logo-container {
+            text-align: center; /* توسيط الشعار */
+            padding: 20px 0; 
+        }
+        .header-logo-container img {
+            max-width: 180px; /* حجم أقصى للشعار */
+            height: auto; 
+            display: block; 
+            margin: 0 auto; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* ظل أقوى لإعطاء إحساس الـ 3D المطلوب */
+        }
+        /* إخفاء العنوان النصي القديم لكي يحل محله الشعار */
+        header .container h1 {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>أزياء الباشا S.H.K</h1>
+            <div class="header-logo-container">
+                <a href="#home">
+                    <img src="lozo.jpg" alt="شعار أزياء الباشا S.H.K">
+                </a>
+            </div>
+            
             <nav>
                 <ul>
                     <li><a href="#home">الرئيسية</a></li>

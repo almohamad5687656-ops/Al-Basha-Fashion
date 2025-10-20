@@ -6,7 +6,6 @@
     <title>أزياء الباشا S.H.K</title>
     <link rel="stylesheet" href="style.css">
 
-    <!-- 🔹 وسوم Open Graph -->
     <meta property="og:url" content="https://almohamad5687656-ops.github.io/Al-Basha-Fashion/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="أزياء الباشا S.H.K" />
@@ -14,12 +13,10 @@
     <meta property="og:image" content="https://raw.githubusercontent.com/almohamad5687656-ops/Al-Basha-Fashion/refs/heads/main/%E2%80%AAlolo.jpg" />
     <meta property="og:image:alt" content="شعار أزياء الباشا S.H.K" />
 
-    <!-- 🔹 روابط الحسابات الرسمية -->
     <meta property="og:see_also" content="https://www.facebook.com/share/17JRdyt37R/" />
     <meta property="og:see_also" content="https://www.instagram.com/s__7iq?igsh=cWpocXhycHF0M2dp" />
     <meta property="og:see_also" content="https://wa.me/9647770490575" />
 
-    <!-- 🔹 أيقونة الموقع -->
     <link rel="icon" type="image/jpeg" href="https://raw.githubusercontent.com/almohamad5687656-ops/Al-Basha-Fashion/refs/heads/main/%E2%80%AAlolo.jpg">
 
     <style>
@@ -39,10 +36,59 @@
         header .container h1 {
             display: none;
         }
+
+        /* ------------------------------------------- */
+        /* تنسيق منطقة الخصم المضافة */
+        /* ------------------------------------------- */
+        .discount-message-container {
+            text-align: center; /* توسيط المحتوى الأفقي (النص والزر) */
+            margin: 20px auto; /* مسافة من الأعلى والأسفل وتوسيط الحاوية نفسها */
+            max-width: 90%; /* لتجنب تمدد الحاوية بشكل مفرط على الشاشات الكبيرة */
+            padding: 15px;
+            background-color: #e0f7e0; /* لون خلفية خفيف يركز الانتباه */
+            border-radius: 8px;
+            border: 2px solid #4CAF50; /* إطار جذاب حول الرسالة */
+        }
+
+        /* تنسيق النص التوضيحي */
+        .discount-text {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 10px; /* مسافة بين النص والزر */
+            direction: rtl; /* ضمان عرض النص العربي بشكل صحيح */
+            font-weight: 500;
+        }
+
+        /* تنسيق زر الخصم */
+        .coupon-button {
+            background-color: #4CAF50; /* لون أخضر جذاب */
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .coupon-button:hover {
+            background-color: #45a049; /* لون أغمق عند التمرير */
+        }
     </style>
 </head>
 
 <body>
+    <div class="discount-message-container">
+        <p class="discount-text">
+            مجرد دخولك لصفحتنا على الويب، حصلت على خصم، **(توصيل مجاني)** خاص بيك لـ 3 طلبات على التوالي، على أن تستخدم الخصم خلال مدة 30 يوم من أول طلب مخصوم التوصيل.
+        </p>
+        <button id="couponButton" class="coupon-button">
+            الحصول على كود الخصم
+        </button>
+    </div>
+
     <header>
         <div class="container">
             <div class="header-logo-container">
@@ -132,5 +178,14 @@
             <p>&copy; 2023 أزياء الباشا S.H.K. جميع الحقوق محفوظة.</p>
         </div>
     </footer>
-</body>
+    
+    <script>
+        document.getElementById('couponButton').addEventListener('click', function() {
+            const couponCode = 'albasha1iq';
+            
+            // استخدام خاصية 'prompt' لعرض الكود في نافذة منبثقة يمكن للعميل نسخها
+            prompt("🎉 تهانينا! هذا هو كود الخصم الخاص بك:", couponCode);
+        });
+    </script>
+    </body>
 </html>
